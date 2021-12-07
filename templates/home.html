@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title>Főoldal</title>
+</head>
+    <body>
+        <h2>Új karakter hozzáadása</h2>
+        <form method="post" action="/addCharacter">
+            <label>Név <input type="text" name="nev"></label><br>
+            Ritkaság
+            <label> 4<input type="radio" name="ritkasag" value="4" checked></label>
+            <label> 5<input type="radio" name="ritkasag" value="5" checked></label><br>
+
+            <select name="elem">
+                <option value="-" selected disabled>Elem kiválasztása</option>
+                <option value="pyro" >Pyro</option>
+                <option value="geo" >Geo</option>
+                <option value="cryo" >Cryo</option>
+                <option value="electro" >Electro</option>
+                <option value="anemo" >Anemo</option>
+                <option value="hydro" >Hydro</option>
+            </select><br>
+
+            <select name="fegyver">
+                <option value="-" selected disabled>Fegyver kiválasztása</option>
+                <option value="kard" >Kard</option>
+                <option value="kétkezes kard" >Kétkezes kard</option>
+                <option value="lándzsa" >Lándzsa</option>
+                <option value="katalizátor" >Katalizátor</option>
+                <option value="íj" >Íj</option>
+            </select><br>
+            <label>Specialitás <input type="text" name="specialitas"></label><br>
+            <input type="submit" value="Karakter rögzítése">
+        </form>
+
+        <br><br><br>
+
+        {% for character in characters %}
+            <a href="/character?nev={{ character['nev'] }}">{{ character["nev"] }}</a><br>
+        {% endfor %}
+
+    </body>
+</html>

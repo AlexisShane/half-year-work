@@ -1,0 +1,30 @@
+[
+  {
+    "elem": "anemo",
+    "fegyver": "lándzsa",
+    "nev": "Xiao",
+    "ritkasag": 5,
+    "specialitas": "kritikus csapás esély"
+  },
+  {
+    "elem": "geo",
+    "fegyver": "kard",
+    "nev": "Albedo",
+    "ritkasag": 5,
+    "specialitas": "geo sebzés bónusz"
+  },
+  {
+    "elem": "pyro",
+    "fegyver": "kard",
+    "nev": "Benett",
+    "ritkasag": 4,
+    "specialitas": "energia töltődés"
+  },
+  {
+    "elem": "cryo",
+    "fegyver": "íj",
+    "nev": "Diona",
+    "ritkasag": 4,
+    "specialitas": "cryo sebzés bónusz"
+  }
+]
